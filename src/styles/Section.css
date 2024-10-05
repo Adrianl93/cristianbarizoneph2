@@ -1,0 +1,28 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+.section-content {
+    
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-box {
+    height: 100%; 
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1%; 
+    padding: 0px;
+    margin: 0px;
+
+}

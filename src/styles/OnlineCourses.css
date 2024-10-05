@@ -1,0 +1,70 @@
+/* Contenedor principal con tamaño fijo */
+.courses-container {
+    max-width: 1200px; /* Ajusta el ancho según tus necesidades */
+    margin: auto 13%; /* Centra el contenedor horizontalmente */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+/* Contenedor de cursos */
+.courses-online {
+    text-align: center; /* Centra el texto del encabezado */
+    background-color: #EAD4BF;
+    max-width: 1300px;
+    margin: 0 0; /* Centra el contenedor horizontalmente */
+    width: 80vw; /* O cualquier porcentaje o valor fijo */
+    
+}
+
+/* Estilos de la grilla */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre los items de la grilla */
+    width: fit-content; /* Ajusta el ancho de la grilla al contenido */
+    margin: 0 0; /* Centra la grilla horizontalmente */
+}
+
+/* Estilos para cada curso */
+.course-item {
+    border: 1.5px solid #A47B5E; /* Borde del curso */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra sutil */
+    padding: 10px;
+    padding-bottom: 30px;
+    height: 36.5vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    background-color: #f5dfb0;
+}
+
+/* Contenedor del botón de WhatsApp dentro del curso */
+.course-item .button-container {
+    width: 100%; /* Asegura que el contenedor del botón ocupe el ancho completo */
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    background-color: #25d366; /* Color de WhatsApp */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e; /* Color de WhatsApp en hover */
+}
+
+.course-text{
+    height: 25vh;
+    width: 35vw;
+    font-size: 13px;
+    
+}

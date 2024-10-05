@@ -163,7 +163,7 @@ const projectData = {
                 "¿Deseas atención personalizada? ¡nuestro mentoring 1 a 1 es la solución! 📸✨",
                 "Recibe atención exclusiva y asesoramiento experto en sesiones individuales diseñadas para abordar tus necesidades y objetivos específicos en fotografía.",
                 "Cada sesión está adaptada a tu nivel y estilo, brindándote apoyo y feedback personalizado para ayudarte a alcanzar tu máximo potencial.",
-                "¿Quieres llevar tu fotografía al siguiente nivel con orientación experta y apoyo personalizado?🌟",
+                "¿Listo para llevar tu fotografía al siguiente nivel con orientación experta y apoyo personalizado? 🌟",
                 "¡Reserva tu sesión de mentoring 1 a 1 y empieza a avanzar hacia tus metas fotográficas con confianza!"
             ],
             whatsappMessage: 'Hola, estoy interesado en el Mentoring 1 to 1',
