@@ -49,17 +49,17 @@ const ContactForm = ({ data }) => {
             return;
         }
         const templateParams = {
-            to_name: process.env.REACT_APP_TO_NAME, // Nombre del destinatario
+            to_name: import.meta.env.VITE_TO_NAME, 
             from_name: formData.name,
             from_email: formData.email,
             message: formData.message,
         };
 
         emailjs.send(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID, // Reemplaza con tu Service ID
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Reemplaza con tu Template ID
+            import.meta.env.VITE_EMAILJS_SERVICE_ID, // Reemplaza con tu Service ID
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Reemplaza con tu Template ID
             templateParams,
-            process.env.REACT_APP_EMAILJS_USER_ID // Reemplaza con tu User ID/ Public Key
+            import.meta.env.VITE_EMAILJS_USER_ID // Reemplaza con tu User ID/ Public Key
         ).then((response) => {
             alert('Mensaje enviado exitosamente!');
             setFormData({

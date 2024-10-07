@@ -63,11 +63,16 @@ const projectData = {
             id: "section2",
             title: "Cursos de fotografía inicial ",
             description: [
+                "",
                 "¡Explora el arte de la fotografía con nuestros cursos! 📸✨",
+                "",
                 "Encuentra el curso perfecto para tus necesidades artísticas.",
                 "Ofrecemos modalidad virtual y presencial con prácticas en diversos rincones de la ciudad.",
                 "Recibirás orientación personalizada y apoyo constante para que te sientas seguro en tu camino fotográfico.",
-                "¿Listo para liberar tu potencial creativo? ¡Únete y aprende a contar historias a través de imágenes poderosas! 🌟",
+                "Obtendrás los mejores recursos, presets y acciones listos para aplicar y mejorar tus fotografías",
+                "¿Listo para liberar tu potencial creativo?",
+                "¡Únete y aprende a contar historias a través de imágenes poderosas! 🌟",
+                "",
                 "¡Reserva tu lugar y comienza tu aventura en el mundo de la fotografía!"
               ],
               
