@@ -1,23 +1,74 @@
+/* Estilos generales de la navbar */
 .navbar {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     z-index: 1000;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra inferior y derecha */
-    border-bottom-left-radius: 10px;  
-    border-bottom-right-radius: 10px; 
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.navbar a {
+/* Estilos para los enlaces */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+}
+
+/* Estilos para el ícono de hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 50vw;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 19px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        width: 34%;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }

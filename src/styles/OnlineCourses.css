@@ -13,7 +13,7 @@
     max-width: 1300px;
     margin: 0 0; /* Centra el contenedor horizontalmente */
     width: 80vw; /* O cualquier porcentaje o valor fijo */
-    
+
 }
 
 /* Estilos de la grilla */
@@ -65,6 +65,46 @@
 .course-text{
     height: 25vh;
     width: 35vw;
-    font-size: 13px;
+    font-size: clamp(11px, 1.1rem, 13px);
     
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+@media (max-width: 768px) {
+    .courses-container {
+        max-width: 1200px; /* Ajusta el ancho según tus necesidades */
+        margin: auto 3%; /* Centra el contenedor horizontalmente */
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+    }
+    .courses-online {
+        max-width: 1000px;
+        margin: 0 0; /* Centra el contenedor horizontalmente */
+        width: 80vw; /* O cualquier porcentaje o valor fijo */
+        padding: 0px;
+        
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
+
+    .course-item {
+        width: 80vw; /* Ajusta el ancho de los cuadros */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        margin: 0 0;
+        padding: 7px;
+    }
+    .course-text{
+        height: 35vh;
+        width: 92vw;
+        font-size: clamp(11px, 1.1rem, 13px);   
+    }
+}
+
+@media (max-width: 480px) {
+    .course-item {
+        width: 90vw; /* Aún más pequeño en pantallas muy pequeñas */
+    }
 }
