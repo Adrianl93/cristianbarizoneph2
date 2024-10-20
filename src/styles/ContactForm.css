@@ -4,9 +4,10 @@
   padding: 20px;
   margin: 20px;
   display: flex;
+  flex-direction: row; /* Alineación en filas para pantallas grandes */
   justify-content: center;
   align-items: center;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra inferior y derecha */;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
 .contact-form {
@@ -14,25 +15,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh; 
-  width: 20vw;
+  width: 100%;
+  max-width: 400px; /* Ancho máximo para evitar estiramientos */
 }
 
-.contact-form input {
+.contact-form input, .contact-form textarea {
   margin-bottom: 2vh;
   padding: 1vh;
-  width: 16vw;
+  width: 100%; /* Ocupa todo el ancho disponible */
   border: 1px solid var(--primary-color);
   border-radius: 10%;
-}
-
-.contact-form textarea {
-  margin-bottom: 2vh;
-  padding: 1vh;
-  width: 16vw;
-  height: 15vh;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
 }
 
 .contact-form button {
@@ -42,17 +34,15 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  height: 5vh;
-  width: 10vw;
+  width: 100%; /* Ocupa todo el ancho disponible */
 }
 
-.contact-form button:hover {
-  background: var(--secondary-color);
-  color: black;
-}
-
-.contact-form div {
-  margin-bottom: 0.75vh;
+.contact-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 20px;
 }
 
 .titleh2 {
@@ -60,30 +50,41 @@
   margin: 0px;
   margin-bottom: 5vh;
   margin-top: 3vh;
-  color:#A47B5E;
+  color: #A47B5E;
 }
 
-.contact-form .error {
-  color: red;
-  font-size: 12px;
-}
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column; /* Colocar imagen arriba del formulario */
+  }
 
-.contact-form button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
+  .contact-image {
+    width: 50%; /* Reducir tamaño de la imagen */
+    height: auto;
+    margin-bottom: 0px;
+  }
 
-.contentGrid {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 100%;
-}
+  .contact-form {
+    width: 90%; /* Hacer el formulario más grande en pantallas pequeñas */
+    max-width: none; /* Quitar restricción de ancho máximo */
+  }
 
-.contact-image {
-  width: auto;
-  max-width: 600px;
-  height: 60vh;
-  border-radius: 5%;
+  .contact-form input, .contact-form textarea {
+    width: 90%; /* Asegurarse de que los inputs ocupen todo el ancho */
+    min-width: 200px; /* Forzar un ancho mínimo en pantallas pequeñas */
+    max-height: 50px;
+    margin:0px;
+    padding:0px;
+  }
+
+  .contact-form button {
+    width: 90%; /* Asegurarse de que el botón ocupe todo el ancho */
+    min-width: 100px;
+  }
+
+  .titleh2 {
+    font-size: 1.5rem; /* Reducir tamaño del título */
+    margin-bottom: 2vh;
+  }
 }
