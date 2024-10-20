@@ -12,7 +12,7 @@ const Courses = ({ data }) => {
     seconds: 0,
   });
   const courseStartDate = new Date(data.courseStartDate);
-  const navigate = useNavigate(); // Hook para redireccionar
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -43,16 +43,14 @@ const Courses = ({ data }) => {
   }, [courseStartDate]);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = data.contact.whatsapp.replace(/\D/g, ""); // Eliminar caracteres no numéricos
+    const phoneNumber = data.contact.whatsapp.replace(/\D/g, "");
     const message = data.contact.message;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
   const handleViewCoursesClick = () => {
-    navigate("/OnlineCourses"); // Redirige a la página de cursos online
+    navigate("/OnlineCourses");
   };
 
   return (
@@ -75,68 +73,9 @@ const Courses = ({ data }) => {
               </React.Fragment>
             ))}
           </p>
-
-        
-                       
-                            <button className="view-courses-button" onClick={handleViewCoursesClick}>
-                                Ver Cursos
-                            </button>
-                     
-         
-          {/* <div className="info-and-courses">
-            <div className="infoPlace">
-              <b>Comienzo:</b> {data.starterDate}
-              <br />
-              <b>Cursado:</b> {data.schedule}
-              <br />
-              <b>Duración:</b> {data.duration}
-              <br />
-              {data.modality}
-              <br />
-              <b>Reservas:</b> {data.booking}
-              <br />
-              <b>{data.limitedPlaces}</b>
-              <br />
-              <br /> 
-              <button className="whatsapp-button" onClick={handleWhatsAppClick}>
-                Inscribirse&nbsp;&nbsp;&nbsp;&nbsp;
-                <img
-                  src={whatsappIcon}
-                  alt="WhatsApp Icon"
-                  width="25"
-                  height="25"
-                />
-              </button>
-            </div> 
-             <div className="online-courses-invite">
-                            <h3>Recuerda, si no puedes asistir, siempre puedes comprar nuestros cursos online clickeando aquí:</h3>
-                            <button className="view-courses-button" onClick={handleViewCoursesClick}>
-                                Ver Cursos Online
-                            </button>
-                        </div> 
-          </div>
-
-           <div className="countdown">
-            <h3>El próximo curso comienza en:</h3>
-            <div id="timer" className="timer">
-              <div>
-                {timeLeft.days}
-                <span>días</span>
-              </div>
-              <div>
-                {timeLeft.hours}
-                <span>horas</span>
-              </div>
-              <div>
-                {timeLeft.minutes}
-                <span>minutos</span>
-              </div>
-              <div>
-                {timeLeft.seconds}
-                <span>segundos</span>
-              </div>
-            </div>
-          </div>  */}
+          <button className="view-courses-button" onClick={handleViewCoursesClick}>
+            Ver Cursos
+          </button>
         </div>
       </div>
     </div>

@@ -61,7 +61,7 @@ const projectData = {
         },
         {
             id: "section2",
-            title: "Cursos de fotografía inicial ",
+            title: "Cursos de fotografía",
             description: [
                 "",
                 "¡Explora el arte de la fotografía con nuestros cursos! 📸✨",
