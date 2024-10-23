@@ -45,9 +45,8 @@ const projectData = {
             id: "home",
             title: "¡Bienvenido!",
             description1: "¡Hola! Soy Cristian Barizone, fotógrafo profesional especializado en familias.",
-            description2: "Vivo en Río Cuarto y la fotografía es mi gran pasión.",
-            description3: "A lo largo de mi carrera, me he formado con referentes destacados tanto a nivel nacional como internacional, lo que me ha permitido perfeccionar mi técnica y estilo.",
-            description4: "Cursé estudios en la Universidad Nacional de Río Cuarto (UNRC) y en la Universidad Católica de Salta (UCASAL), especializándome en fotografía de niños y familias, para capturar esos momentos únicos y memorables que atesorarás para siempre.",
+            description2: "A lo largo de mi carrera, me he formado con referentes destacados tanto a nivel nacional como internacional, lo que me ha permitido perfeccionar mi técnica y estilo.",
+            description3: "Cursé estudios en la Universidad Nacional de Río Cuarto (UNRC) y en la Universidad Católica de Salta (UCASAL), especializándome en fotografía de niños y familias, para capturar esos momentos únicos y memorables que atesorarás para siempre.",
             image: foto1,
             backgroundColor: "#be9380"
         },
@@ -63,15 +62,11 @@ const projectData = {
             id: "section2",
             title: "Cursos de fotografía",
             description: [
-                "",
                 "¡Explora el arte de la fotografía con nuestros cursos! 📸✨",
-                "",
-                "Encuentra el curso perfecto para tus necesidades artísticas.",
                 "Ofrecemos modalidad virtual y presencial con prácticas en diversos rincones de la ciudad.",
                 "Recibirás orientación personalizada y apoyo para sentirte seguro en tu camino fotográfico.",
                 "Obtendrás los mejores recursos, presets y acciones listos para aplicar en tus fotografías.",
                 "",
-                "¿Listo para liberar tu potencial creativo?",
                 "¡Únete y aprende a contar historias a través de imágenes poderosas! 🌟",
                 "",
                 "¡Reserva tu lugar y comienza tu aventura en el mundo de la fotografía!"

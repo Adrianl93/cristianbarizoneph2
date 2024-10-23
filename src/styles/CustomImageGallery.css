@@ -2,8 +2,11 @@
 .custom-image-gallery-container {
     position: relative;
     width: 100%;
+    max-width: 1200px; /* Añadir un max-width para limitar el tamaño en pantallas grandes */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 0 auto; /* Centrar horizontalmente en la página */
     padding: 10px;
     background-color: #BE9380;
     border-radius: 15px;
@@ -13,12 +16,15 @@
 /* Estilos para la galería de imágenes */
 .custom-image-gallery {
     display: flex;
+    justify-content: center; /* Asegurarse de que esté centrado */
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
     width: 100%;
+    max-width: 1000px; /* Añadir un max-width */
+    
     border-radius: 10px;
 }
 
@@ -34,57 +40,20 @@
     margin-right: 10px;
     cursor: pointer;
     border-radius: 10px;
-}
-
-.custom-image-gallery .image-gallery-slide img {
-    max-height: 80vh;
-}
-
-/* Estilos personalizados para las miniaturas */
-.custom-image-gallery .image-gallery-thumbnail {
-    width: 10vh;
-    height: 10vh;
-    margin-inline: 0.5vh;
-}
-
-.custom-image-gallery .image-gallery-thumbnail img {
-    height: 10vh;
-    object-fit: cover;
-}
-
-.custom-image-gallery .image-gallery-thumbnail.active img {
-    border: 2px solid #00f;
-}
-
-.custom-image-gallery .image-gallery-thumbnails-container {
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    height: 11vh;
-}
-
-/* Media queries para pantallas medianas (tablets) */
-@media (max-width: 1024px) {
-    .custom-image-gallery img {
-        height: 50vh; /* Ajusta la altura de las imágenes en tablets */
-    }
-
-    .custom-image-gallery .image-gallery-thumbnail {
-        width: 8vh;
-        height: 8vh;
-    }
-
-    .custom-image-gallery .image-gallery-thumbnail img {
-        height: 8vh;
-    }
-
-    .custom-image-gallery .image-gallery-slide img {
-        max-height: 60vh;
-    }
+    max-height: 80px;
 }
 
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 768px) {
+    .custom-image-gallery-container {
+        width: 90%; /* Ajuste del ancho en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .custom-image-gallery {
+        width: 100%; /* Asegúrate de que ocupe el 100% del ancho disponible */
+    }
+
     .custom-image-gallery img {
         height: 40vh; /* Ajusta la altura de las imágenes en smartphones */
     }
@@ -101,7 +70,7 @@
     .custom-image-gallery .image-gallery-slide img {
         max-height: 50vh;
     }
-    
+
     .custom-image-gallery .image-gallery-thumbnails-container {
         display: flex;
         justify-content: center; /* Centra las miniaturas en pantallas pequeñas */

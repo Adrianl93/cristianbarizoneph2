@@ -8,6 +8,12 @@
   justify-content: center;
   align-items: center;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+  width: 40vw;
+  height: 60vh;
+  max-height: 100vh;
+ 
+
+
 }
 
 .contact-form {
@@ -38,15 +44,17 @@
 }
 
 .contact-image {
-  width: 100%;
+  display: flex;
+  width: 80%;
   max-width: 600px;
   height: auto;
   border-radius: 5%;
-  margin-bottom: 20px;
+  
+ 
 }
 
 .titleh2 {
-  font-size: 1.3rem;
+  font-size: clamp(20px, 1.8rem, 28px);
   margin: 0px;
   margin-bottom: 5vh;
   margin-top: 3vh;
@@ -57,13 +65,18 @@
 @media screen and (max-width: 768px) {
   .contact-form-container {
     flex-direction: column; /* Colocar imagen arriba del formulario */
-  }
+    width: 80vw ; 
+    height: 80vh;
+    }
 
-  .contact-image {
-    width: 50%; /* Reducir tamaño de la imagen */
-    height: auto;
-    margin-bottom: 0px;
+    .contact-image {
+      display: block; /* No es necesario 'flex' en la imagen */
+      width: 60%; /* Reducir tamaño de la imagen */
+      height: auto;
+      margin: 0 auto; /* Centrar horizontalmente */
+      margin-bottom: 0px;
   }
+  
 
   .contact-form {
     width: 90%; /* Hacer el formulario más grande en pantallas pequeñas */

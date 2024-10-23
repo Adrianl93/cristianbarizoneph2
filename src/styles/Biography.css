@@ -33,6 +33,7 @@
     width: 30vw;
     text-align: center;
     margin-inline: auto;
+    font-size: clamp(14px, 1.1rem, 17px);
 }
 
 .biography-text-p {

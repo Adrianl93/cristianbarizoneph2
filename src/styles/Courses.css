@@ -34,13 +34,17 @@
     align-items: center;
     justify-content: center;
     width: 43%;
+    margin-top: 2vh;
   }
   
   .course-description p {
-    font-size: clamp(14px, 1.1rem, 16px);
+    font-size: clamp(14px, 1.1rem, 17px);
     margin-bottom: 10px; /* Reducimos el margen inferior */
     text-align: center;
+    width: 20vw;
     color: #ead4bf;
+
+    padding: 10vh;
   }
   
   .course-container h2 {
