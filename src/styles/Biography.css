@@ -1,10 +1,15 @@
 .biography-section {
+    
     margin-top: 15vh;
     margin-bottom: 12vh;
     padding: 20px;
     border-radius: 10px;
     background-color: #f7dbb0;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    height: 62vh;
+    width: 80vw;
+    
+
 }
 
 .biography-grid {
@@ -18,10 +23,12 @@
 
 /* Ajuste para pantallas grandes */
 .biography-image img {
-    width: 100%;
-    height: 70vh;
+    display: block;
+    width: 35vw;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover;
+    margin-bottom: 5vh;
+    
 }
 
 .biography-text {
@@ -48,22 +55,33 @@
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
+    .biography-section {
+        margin-top: 20vh;
+        height: 70vh;
+        
+    }
     .biography-grid {
         grid-template-columns: 1fr; /* Cambia a una columna */
         grid-template-rows: auto auto; /* Permite que el texto y la imagen se coloquen uno debajo del otro */
         gap: 5vw; /* Reduce el espacio entre los elementos */
+        margin-bottom: 0px;
     }
 
     .biography-image img {
-        height: auto; /* Ajusta la altura de la imagen para pantallas pequeñas */
+        display: block;
+        margin: auto;
+        width: 70%;
+        margin-top: 0px;
     }
 
     .biography-text {
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        margin-bottom: 0px;
     }
 
     .biography-text-p,
     .biography-text-title {
         font-size: 3.5vw; /* Ajusta el tamaño del texto para pantallas pequeñas */
+        margin-bottom: 0px;
     }
 }

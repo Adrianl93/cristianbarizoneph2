@@ -43,10 +43,18 @@
     max-height: 80px;
 }
 
+
+
+
+
+
+
+
+
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 768px) {
     .custom-image-gallery-container {
-        width: 90%; /* Ajuste del ancho en pantallas pequeñas */
+        width: 70%; /* Ajuste del ancho en pantallas pequeñas */
         padding: 10px;
     }
 

@@ -66,6 +66,7 @@
     height: 25vh;
     width: 35vw;
     font-size: clamp(11px, 1.1rem, 13px);
+    max-width: 1200px;
     
 }
 
@@ -100,6 +101,7 @@
         height: 35vh;
         width: 92vw;
         font-size: clamp(11px, 1.1rem, 13px);   
+        max-width: 400px;
     }
 }
 

@@ -11,9 +11,6 @@
   width: 40vw;
   height: 60vh;
   max-height: 100vh;
- 
-
-
 }
 
 .contact-form {
@@ -21,83 +18,94 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   max-width: 400px; /* Ancho máximo para evitar estiramientos */
 }
 
-.contact-form input, .contact-form textarea {
-  margin-bottom: 2vh;
-  padding: 1vh;
-  width: 100%; /* Ocupa todo el ancho disponible */
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  width: 90%; /* Ancho completo del contenedor */
+  min-width: 200px;
   border: 1px solid var(--primary-color);
-  border-radius: 10%;
+  border-radius: 5px;
+  
+}
+
+.contact-form textarea {
+  height: 15vh; /* Tamaño ajustable según la altura */
 }
 
 .contact-form button {
-  padding: 1vh;
+  padding: 0.75rem;
   background: var(--accent-color);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%; /* Ocupa todo el ancho disponible */
+  width: 50%; /* Ancho completo del contenedor */
+}
+
+.contact-form button:hover {
+  background: var(--secondary-color);
+  color: black;
 }
 
 .contact-image {
   display: flex;
-  width: 80%;
+  width: 20vw;
   max-width: 600px;
   height: auto;
   border-radius: 5%;
-  
- 
 }
 
 .titleh2 {
   font-size: clamp(20px, 1.8rem, 28px);
-  margin: 0px;
-  margin-bottom: 5vh;
-  margin-top: 3vh;
-  color: #A47B5E;
+  margin: 3vh 0 5vh; /* Combina márgenes para simplificar */
 }
 
 /* Responsive para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .contact-form-container {
-    flex-direction: column; /* Colocar imagen arriba del formulario */
-    width: 80vw ; 
-    height: 80vh;
-    }
+      flex-direction: column; /* Colocar imagen arriba del formulario */
+      height: 70vh;
+      width: 78vw;
+      margin-inline: 0;
+  }
+  .contact-form textarea {
+    height: 10vh; /* Tamaño ajustable según la altura */
+  }
 
-    .contact-image {
+  .contact-image {
       display: block; /* No es necesario 'flex' en la imagen */
       width: 60%; /* Reducir tamaño de la imagen */
       height: auto;
       margin: 0 auto; /* Centrar horizontalmente */
       margin-bottom: 0px;
   }
-  
 
   .contact-form {
-    width: 90%; /* Hacer el formulario más grande en pantallas pequeñas */
-    max-width: none; /* Quitar restricción de ancho máximo */
+      width: 90%; /* Hacer el formulario más grande en pantallas pequeñas */
+      max-width: none; /* Quitar restricción de ancho máximo */
   }
 
-  .contact-form input, .contact-form textarea {
-    width: 90%; /* Asegurarse de que los inputs ocupen todo el ancho */
-    min-width: 200px; /* Forzar un ancho mínimo en pantallas pequeñas */
-    max-height: 50px;
-    margin:0px;
-    padding:0px;
+  .contact-form input,
+  .contact-form textarea {
+      width: 80%; /* Asegurarse de que los inputs ocupen todo el ancho */
+      min-width: 200px; /* Forzar un ancho mínimo en pantallas pequeñas */
+      margin: 0; /* Eliminar márgenes */
+      padding: 0.3rem; /* Ajuste de padding */
+      
   }
 
   .contact-form button {
-    width: 90%; /* Asegurarse de que el botón ocupe todo el ancho */
-    min-width: 100px;
+      width: 50%; /* Asegurarse de que el botón ocupe todo el ancho */
+      min-width: 100px;
   }
 
   .titleh2 {
-    font-size: 1.5rem; /* Reducir tamaño del título */
-    margin-bottom: 2vh;
+      font-size: 1.5rem; /* Reducir tamaño del título */
+      margin-bottom: 2vh;
   }
 }

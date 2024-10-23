@@ -1,102 +1,116 @@
 .course-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #a47b5e;
-    height: 80vh;
-    margin: 1vh;
-    padding: 0%;
-    border-radius: 20px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .contentGrid {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
-  .course-image {
-    width: auto;
-    max-width: 600px;
-    height: 70vh;
-    border-radius: 5%;
-    margin-top: 5vh;
-    object-fit: cover;
-  }
-  
-  .course-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 43%;
-    margin-top: 2vh;
-  }
-  
-  .course-description p {
-    font-size: clamp(14px, 1.1rem, 17px);
-    margin-bottom: 10px; /* Reducimos el margen inferior */
-    text-align: center;
-    width: 20vw;
-    color: #ead4bf;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #a47b5e;
+  height: 80vh;
+  margin: 0;
+  padding: 0%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
 
-    padding: 10vh;
-  }
-  
-  .course-container h2 {
-    color: #ead4bf;
-    font-size: clamp(20px, 1.8rem, 28px);
-    margin: 0px;
-    margin-top: 2vh;
-  }
-  
-  .view-courses-button {
-    background-color: #EAD4BF;
-    color: #A47B5E;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 auto;
-  }
-  
-  .view-courses-button:hover {
-    background-color: #f5dfb0;
-  }
-  
-  /* Media Query para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .contentGrid {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .course-image {
-      width: 80%; /* Imagen más pequeña (80% del box) */
-      height: auto; /* Ajuste automático de la altura */
-      margin-top: 0;
-    }
-  
-    .course-description {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    .course-description p {
-      font-size: 0.9rem; /* Fuente más pequeña para que entre todo el texto */
-    }
-  
-    .course-container h2 {
-      font-size: 1.5rem; /* Reducimos el tamaño del título */
-      margin-bottom: 0.5vh; /* Reducimos el margen entre título y texto */
-      margin-top: 0vh;
-    }
+.contentGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.course-image {
+  width: auto;
+  max-width: 600px;
+  height: 70vh;
+  border-radius: 5%;
+  margin-top: 5vh;
+  object-fit: cover;
+}
+
+.course-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 43%;
+  margin-top: 4vh;
+
+}
+
+.course-description p {
+  font-size: clamp(14px, 1.1rem, 17px);
+  margin-bottom: 10px; /* Reducimos el margen inferior */
+  text-align: center;
+  width: 25vw;
+  color: #ead4bf;
+  padding-inline: 10vw;
+  margin-bottom: 5vh;
+}
+
+.course-container h2 {
+  color: #ead4bf;
+  font-size: clamp(20px, 1.8rem, 28px);
+  margin: 0px;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+
+.view-courses-button {
+  background-color: #EAD4BF;
+  color: #A47B5E;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.view-courses-button:hover {
+  background-color: #f5dfb0;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .course-container {
+    
+    height: 85vh;
+    width: 90vw;
     
   }
+  .contentGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-image {
+    display: block;
+    margin: auto;
+    width: 60%; /* Imagen más pequeña (80% del box) */
+    height: auto; /* Ajuste automático de la altura */
+    margin-top: 1vh;
+  }
+
+  .course-description {
+    width: 65vw;
+    padding: 50px;
+    height:25vh;
+    margin-top: 10vh;
+  }
+
+  .course-description p {
+    font-size: 0.9rem; /* Fuente más pequeña para que entre todo el texto */
+    width: 80vw;
+    
+  }
+
+  .course-container h2 {
+    font-size: 1.5rem; /* Reducimos el tamaño del título */
+    margin-bottom: 0.5vh; /* Reducimos el margen entre título y texto */
+    margin-top: 0vh;
+  }
   
+}
