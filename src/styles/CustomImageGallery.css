@@ -2,29 +2,29 @@
 .custom-image-gallery-container {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Añadir un max-width para limitar el tamaño en pantallas grandes */
+    max-width: 1200px; /* Limitar el tamaño en pantallas grandes */
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    margin: 0 auto; /* Centrar horizontalmente en la página */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     padding: 10px;
     background-color: #BE9380;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Oculta contenido que exceda el contenedor */
 }
 
 /* Estilos para la galería de imágenes */
 .custom-image-gallery {
     display: flex;
-    justify-content: center; /* Asegurarse de que esté centrado */
+    justify-content: center;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
     width: 100%;
-    max-width: 1000px; /* Añadir un max-width */
-    
+    max-width: 1000px; /* Limitar el tamaño */
     border-radius: 10px;
 }
 
@@ -43,18 +43,15 @@
     max-height: 80px;
 }
 
-
-
-
 /* Media queries para pantallas medianas (tablets) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .custom-image-gallery-container {
         width: 80%; /* Ajuste del ancho en pantallas de tablet */
-        padding: 15px; /* Ajusta el padding para tablets */
+        padding: 15px;
     }
 
     .custom-image-gallery {
-        width: 100%; /* Asegúrate de que ocupe el 100% del ancho disponible */
+        width: 100%;
     }
 
     .custom-image-gallery img {
@@ -62,12 +59,8 @@
     }
 
     .custom-image-gallery .image-gallery-thumbnail {
-        width: 8vh;
-        height: 8vh; /* Tamaño de las miniaturas optimizado para tablets */
-    }
-
-    .custom-image-gallery .image-gallery-thumbnail img {
-        height: 8vh; /* Ajusta la altura de las miniaturas */
+        width: 7vh; /* Tamaño de las miniaturas optimizado para tablets */
+        height: 7vh; 
     }
 
     .custom-image-gallery .image-gallery-slide img {
@@ -77,47 +70,40 @@
     .custom-image-gallery .image-gallery-thumbnails-container {
         display: flex;
         justify-content: center; /* Centra las miniaturas en pantallas de tablet */
+        overflow: hidden; /* Oculta contenido que exceda el tamaño del contenedor */
+        max-width: 100%; /* Limitar el ancho de las miniaturas */
     }
 }
-
-
-
-
-
-
-
-
 
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 768px) {
     .custom-image-gallery-container {
-        width: 70%; /* Ajuste del ancho en pantallas pequeñas */
-        padding: 10px;
+        width: 90%; /* Ocupa el ancho completo */
+        padding: 5px;
     }
 
     .custom-image-gallery {
-        width: 100%; /* Asegúrate de que ocupe el 100% del ancho disponible */
+        width: 100%;
     }
 
     .custom-image-gallery img {
-        height: 40vh; /* Ajusta la altura de las imágenes en smartphones */
+        height: 60vh; /* Ajusta la altura de las imágenes en smartphones */
     }
 
     .custom-image-gallery .image-gallery-thumbnail {
-        width: 6vh;
-        height: 6vh;
-    }
-
-    .custom-image-gallery .image-gallery-thumbnail img {
-        height: 6vh;
+        width: 5vh;
+        height: 5vh;
     }
 
     .custom-image-gallery .image-gallery-slide img {
-        max-height: 50vh;
+        max-height: 60vh;
     }
 
     .custom-image-gallery .image-gallery-thumbnails-container {
         display: flex;
-        justify-content: center; /* Centra las miniaturas en pantallas pequeñas */
+        justify-content: center;
+        overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
+        max-width: 70%; /* Limitar el ancho de las miniaturas */
+        padding: 0 10px; /* Margen lateral para ajustar espacio en dispositivos móviles */
     }
 }

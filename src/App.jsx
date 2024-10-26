@@ -5,18 +5,10 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Section from './components/Section';
 import Footer from './components/Footer';
-import foto1 from './assets/foto1.jpg';
-import foto2 from './assets/foto2.jpg';
-import foto3 from './assets/foto3.jpg';
-import foto4 from './assets/foto4.jpg';
-import foto5 from './assets/foto5.jpg';
-import foto6 from './assets/foto6.jpg';
-import foto7 from './assets/foto7.jpg';
-import foto8 from './assets/foto8.jpg';
-import foto9 from './assets/foto9.jpg';
-import foto10 from './assets/foto10.jpg';
-import foto11 from './assets/foto11.jpg';
-import foto12 from './assets/foto12.jpg';
+// Importa todas las imágenes en un solo paso
+const images = import.meta.glob('./assets/*.jpg', { eager: true });
+const imageArray = Object.values(images).map((img) => img.default); // Obtener los paths de las imágenes
+
 
 
 
@@ -47,16 +39,16 @@ const projectData = {
             description1: "¡Hola! Soy Cristian Barizone, fotógrafo profesional especializado en familias.",
             description2: "A lo largo de mi carrera, me he formado con referentes destacados tanto a nivel nacional como internacional, lo que me ha permitido perfeccionar mi técnica y estilo.",
             description3: "Cursé estudios en la Universidad Nacional de Río Cuarto (UNRC) y en la Universidad Católica de Salta (UCASAL), especializándome en fotografía de niños y familias, para capturar esos momentos únicos y memorables que atesorarás para siempre.",
-            image: foto1,
+            image: imageArray[0],
             backgroundColor: "#be9380"
         },
         {
             id: "section1",
             title: "Fotografía",
             description: "",
-            image: foto2,
+            image: imageArray[1],
             backgroundColor: "#d4b39f",
-            images: [foto4, foto5, foto6, foto7,foto8, foto9, foto10, foto11,foto12] 
+            images: imageArray
         },
         {
             id: "section2",
@@ -79,7 +71,7 @@ const projectData = {
             booking:"Abonando el 50% al momento de la inscripción",
             info:"Info y reservas: 3584601279",
             limitedPlaces:"Cupos limitados",
-            image: foto2,
+            image: imageArray[1],
             backgroundColor: "#ead4bf",
             courseStartDate: '2024-08-03T10:00:00', // Fecha del curso
             contact: {
@@ -91,7 +83,7 @@ const projectData = {
             id: "section3",
             title: "Contacto",
             description: "",
-            image: foto3,
+            image: imageArray[2],
             backgroundColor: "#f5dfb0",
         
             form: {

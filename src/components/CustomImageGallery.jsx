@@ -4,7 +4,7 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import '../styles/CustomImageGallery.css';
 
 const CustomImageGallery = ({ images }) => {
-    const formattedImages = images.map((image) => ({
+    const formattedImages = images.slice(3).map((image) => ({
         original: image,
         thumbnail: image,
     }));
