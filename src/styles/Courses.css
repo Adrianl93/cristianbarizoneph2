@@ -1,5 +1,5 @@
 .course-container {
-  width: 100vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +72,62 @@
 .view-courses-button:hover {
   background-color: #f5dfb0;
 }
+
+
+
+
+
+
+/* Media Query para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .course-container {
+    width: 85vw; /* Ancho ajustado para tablets */
+    height: 80vh;
+    padding: 10px; /* Reducimos el padding */
+  }
+
+  .contentGrid {
+    flex-direction: column; /* Pasamos a columna en lugar de fila */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .course-image {
+    width: 100%; /* Tamaño de imagen ajustado para tablets */
+    max-width: 550px;
+    height: auto;
+    margin-top: 2vh;
+  }
+
+  .course-description {
+    width: 70%; /* Ajustamos el ancho de la descripción */
+    margin-top: 2vh;
+    padding: 20px;
+  }
+
+  .course-description p {
+    font-size: 1rem; /* Tamaño de fuente cómodo para lectura en tablets */
+    width: 100%; /* Texto ocupa el ancho completo */
+    padding-inline: 5vw;
+  }
+
+  .course-container h2 {
+    font-size: 1.6rem; /* Ajuste del tamaño del título */
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+
+  .view-courses-button {
+    padding: 8px 16px;
+    font-size: 15px; /* Tamaño de botón ajustado */
+  }
+}
+
+
+
+
+
+
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {

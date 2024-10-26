@@ -2,12 +2,14 @@
     
     margin-top: 15vh;
     margin-bottom: 12vh;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     background-color: #f7dbb0;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     height: 62vh;
     width: 80vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
     
 
 }
@@ -19,6 +21,7 @@
     justify-content: space-around;
     align-items: center;
     margin-inline: 5vw;
+    margin-trim: 0;
 }
 
 /* Ajuste para pantallas grandes */
@@ -53,11 +56,56 @@
     line-height: 1.5;
 }
 
+
+
+
+/* Media Query para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .biography-section {
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+        height: 80vh;
+        width: 85vw; /* Ajusta el ancho para tablets */
+        padding: 15px;
+    }
+
+    .biography-grid {
+        grid-template-columns: 1fr; /* Cambia a una columna en tablets */
+        grid-template-rows: auto auto; /* Ubica la imagen encima o debajo del texto */
+        gap: 8vw; /* Ajuste del espacio entre elementos */
+        margin-inline: 5vw;
+    }
+
+    .biography-image img {
+        width: 50vw; /* Ajusta el tamaño de la imagen para tablets */
+        margin: 0 auto 5vh auto; /* Centra la imagen con margen inferior */
+    }
+
+    .biography-text {
+        width: 70%; /* Ocupa una buena proporción del ancho en tablets */
+        font-size: 1.2rem; /* Tamaño de fuente optimizado para tablets */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .biography-text-p,
+    .biography-text-title {
+        font-size: 2.5vw; /* Ajusta el tamaño del texto en tablets */
+        line-height: 1.4;
+    }
+}
+
+
+
+
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     .biography-section {
         margin-top: 20vh;
         height: 70vh;
+        max-height: 1100px;
+        padding-top: 0px;
+        padding-bottom:0px ;
         
     }
     .biography-grid {

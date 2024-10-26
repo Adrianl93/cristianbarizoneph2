@@ -10,7 +10,7 @@ const NavBar = ({ data }) => {
 
     return (
         <nav className="navbar">
-            <a href="/">Home</a>
+            <a href="/">Cristian Barizone PH</a>
 
             <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
                 {data.sections.map((section) => (

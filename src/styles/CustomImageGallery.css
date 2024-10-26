@@ -46,6 +46,43 @@
 
 
 
+/* Media queries para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .custom-image-gallery-container {
+        width: 80%; /* Ajuste del ancho en pantallas de tablet */
+        padding: 15px; /* Ajusta el padding para tablets */
+    }
+
+    .custom-image-gallery {
+        width: 100%; /* Asegúrate de que ocupe el 100% del ancho disponible */
+    }
+
+    .custom-image-gallery img {
+        height: 50vh; /* Ajusta la altura de las imágenes en tablets */
+    }
+
+    .custom-image-gallery .image-gallery-thumbnail {
+        width: 8vh;
+        height: 8vh; /* Tamaño de las miniaturas optimizado para tablets */
+    }
+
+    .custom-image-gallery .image-gallery-thumbnail img {
+        height: 8vh; /* Ajusta la altura de las miniaturas */
+    }
+
+    .custom-image-gallery .image-gallery-slide img {
+        max-height: 60vh; /* Ajusta la altura máxima para una mejor visualización en tablets */
+    }
+
+    .custom-image-gallery .image-gallery-thumbnails-container {
+        display: flex;
+        justify-content: center; /* Centra las miniaturas en pantallas de tablet */
+    }
+}
+
+
+
+
 
 
 

@@ -65,6 +65,59 @@
   margin: 3vh 0 5vh; /* Combina márgenes para simplificar */
 }
 
+
+
+/* Media Query para pantallas medianas (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contact-form-container {
+    flex-direction: column; /* Organiza la imagen sobre el formulario en tablets */
+    width: 50vw;
+    height: auto;
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .contact-image {
+    display: block;
+    width: 50%; /* Tamaño moderado de la imagen para tablets */
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto 10px; /* Centramos la imagen horizontalmente y ajustamos el margen inferior */
+  }
+
+  .contact-form {
+    width: 90%; /* Se amplía el formulario para ocupar más espacio */
+    max-width: 450px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%; /* Inputs más anchos para mejor usabilidad en tablets */
+    padding: 0.5rem; /* Ajuste de padding */
+    font-size: 1rem; /* Fuente optimizada para tablets */
+  }
+
+  .contact-form textarea {
+    height: 12vh; /* Ajuste en altura */
+  }
+
+  .contact-form button {
+    width: 60%; /* Ancho de botón adaptado */
+    font-size: 1rem;
+  }
+
+  .titleh2 {
+    font-size: 1.6rem; /* Ajuste de título para tablets */
+    margin: 2vh 0;
+  }
+}
+
+
+
+
+
+
+
 /* Responsive para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .contact-form-container {
@@ -83,6 +136,7 @@
       height: auto;
       margin: 0 auto; /* Centrar horizontalmente */
       margin-bottom: 0px;
+      max-height: 400px;
   }
 
   .contact-form {

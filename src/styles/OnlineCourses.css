@@ -70,6 +70,53 @@
     
 }
 
+
+
+
+
+/* Media Query para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .courses-container {
+        max-width: 1000px; /* Ajusta el ancho para tablets */
+        margin: auto 5%; /* Centra el contenedor horizontalmente */
+        margin-top: 8vh;
+        margin-bottom: 12vh;
+    }
+
+    .courses-online {
+        width: 95vw; /* Ajuste de ancho */
+        padding: 5px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr 1fr; /* Mantiene dos columnas para tablets */
+        gap: 15px; /* Ajusta el espacio entre los elementos */
+    }
+
+    .course-item {
+        width: 40vw; /* Ajusta el ancho de los cuadros */
+        height: 42vh; /* Permite que la altura se ajuste automáticamente */
+        padding: 10px;
+    }
+
+    .course-text {
+        width: 90%; /* Ajusta el ancho del texto */
+        font-size: clamp(12px, 1rem, 15px); /* Tamaño de texto adaptado para tablets */
+    }
+
+    .whatsapp-button {
+        position:relative;
+
+        bottom: -5.5vh;
+        padding: 8px 16px; /* Tamaño del botón adaptado */
+        font-size: 15px; /* Ajuste de fuente para tablets */
+    }
+}
+
+
+
+
+
 /* Media Queries para pantallas más pequeñas */
 
 @media (max-width: 768px) {
