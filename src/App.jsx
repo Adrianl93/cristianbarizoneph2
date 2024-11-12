@@ -95,7 +95,7 @@ const projectData = {
         }
     ],
     footer: {
-        email: "mailto:email@example.com",
+        email: "mailto:cbarizonefotografo@gmail.com",
         whatsapp: "https://wa.me/3584601279",
         instagram: "https://www.instagram.com/cristianbarizonephotography"
     },
