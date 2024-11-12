@@ -75,7 +75,7 @@ const projectData = {
             backgroundColor: "#ead4bf",
             courseStartDate: '2024-08-03T10:00:00', // Fecha del curso
             contact: {
-                whatsapp: "https://wa.me/3584601279", // Numero de whatsapp
+                whatsapp: "https://w.app/CXSpdH", // Numero de whatsapp
                 message: "Hola Cristian!! quiero inscribirme a tu curso"
             }
         },
@@ -96,7 +96,7 @@ const projectData = {
     ],
     footer: {
         email: "mailto:cbarizonefotografo@gmail.com",
-        whatsapp: "https://wa.me/3584601279",
+        whatsapp: "https://w.app/CXSpdH",
         instagram: "https://www.instagram.com/cristianbarizonephotography"
     },
     onlineCourses:  { 
@@ -110,7 +110,7 @@ const projectData = {
                 "¿Listo para desbloquear tu potencial creativo? 🌟",
                 "¡Reserva tu lugar y comienza tu aventura fotográfica!"
               ], 
-            whatsappMessage: 'Hola, estoy interesado en el Curso de Fotografía Inicial',
+            whatsappMessage: '¡Hola Cristian! Me interesa tu Curso de Fotografía Inicial',
         },
         curso2: {
             id:2,
@@ -122,7 +122,7 @@ const projectData = {
                 "¿Listo para perfeccionar tu técnica y destacar en el mundo de la fotografía? 🌟",
                 "¡Reserva tu lugar y transforma tu pasión en arte fotográfico!"
                 ],
-            whatsappMessage: 'Hola, estoy interesado en el Curso de Fotografía Avanzado',
+            whatsappMessage: '¡Hola Cristian! Me interesa tu Curso de Fotografía Avanzado',
         },
         curso3: {
             id:3,
@@ -135,7 +135,7 @@ const projectData = {
                 "¿Listo para llevar tus habilidades a la práctica y destacar en el mundo de la fotografía? 🌟",
                 "¡Inscríbete ahora y vive una experiencia fotográfica transformadora!"
             ],
-            whatsappMessage: 'Hola, estoy interesado en el Workshop de fotografía',
+            whatsappMessage: '¡Hola Cristian! Me interesa tu Workshop de fotografía',
         },
         curso4: {
             id:4,
@@ -147,7 +147,7 @@ const projectData = {
                 "¿Listo para dar el primer paso en el arte de la edición y ver cómo tus fotos cobran vida? 🌟",
                 "¡Inscríbete y comienza a transformar tus imágenes en obras maestras con técnicas accesibles y prácticas!"
             ],
-            whatsappMessage: 'Hola, estoy interesado en la Clase de Edición fotográfica',
+            whatsappMessage: '¡Hola Cristian! Me interesa tu Clase de Edición fotográfica',
         },
         curso5: {
             id:5,
@@ -159,7 +159,7 @@ const projectData = {
                 "¿Quieres llevar tu fotografía al siguiente nivel con orientación experta y apoyo personalizado?🌟",
                 "¡Reserva tu sesión de mentoring 1 a 1 y empieza a avanzar hacia tus metas fotográficas con confianza!"
             ],
-            whatsappMessage: 'Hola, estoy interesado en el Mentoring 1 to 1',
+            whatsappMessage: '¡Hola Cristian! Me interesa el Mentoring 1 to 1',
         }
     }
 };

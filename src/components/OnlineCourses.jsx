@@ -3,7 +3,7 @@ import '../styles/OnlineCourses.css';
 
 const CourseItem = ({ title, description, whatsappMessage }) => {
     const handleClick = () => {
-        window.open(`https://wa.me/3584601279?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+        window.open(`https://wa.me/+543584601279?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
     };
 
     return (
